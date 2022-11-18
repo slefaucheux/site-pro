@@ -61,6 +61,11 @@ window.addEventListener('load', () => {
 
 // menu responsive
 
+
 btnMenu.addEventListener('click', function(){
+    menu.classList.toggle('active-menu')
+})
+
+menu.addEventListener('click', function(){
     menu.classList.toggle('active-menu')
 })
