@@ -9,12 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya:wght@500&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap" rel="stylesheet">
     <title>Site pro Sophie</title>
+    <script src="https://kit.fontawesome.com/fea61db915.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <nav>
         <ul class="liste-nav">
             <li><a class="slide-line" href="#presentation">Présentation</a></li>
             <li><a class="slide-line" href="#experience">Expériences</a></li>
+            <li><a class="slide-line" href="#realisation">Compétences</a></li>
             <li><a class="slide-line" href="#projet">Projets</a></li>
             <li><a class="slide-line" href="#contact">Contact</a></li>
         </ul>
@@ -23,15 +26,19 @@
         </div>
     </nav>
 
+    <section class="overlay">
+        <h1></h1>
+    </section>
+
     <section class="content-section" id="presentation">
         <div class="container">
             <div class="texte">
                 <h1>Sophie Lefaucheux</h1>
                 <h3>Autodidacte avec l'envie d'apprendre plus</h3>
-                <p>A 29 ans, c’est décidé, je me lance dans la grande aventure de la reconversion professionnelle ! Le monde du développement web est fascinant et après avoir mis le nez dedans pendant la pandémie, et pour ma curiosité personnelle, le moment est venu de m’y lancer plus sérieusement. J’ai réalisé  et pensé ce site pour vous donner un premier aperçu de mes compétences en Dev Front-End, et vous donner envie d’en savoir plus. Pourquoi faire un CV classique, quand on peux s’amuser à faire un site ! </p>
+                <p>A 29 ans, c’est décidé, je me lance dans la grande aventure de la reconversion professionnelle ! Quelques mots sur moi : je suis de formation hôtellerie restauration, j’ai vécu ces 4 dernières années au Quebec, et je suis de retour dans la région de Charente-Maritime. J’ai découvert le monde du développement web pendant la pandémie, pour ma curiosité personnelle et je pense que le moment est venu pour m’y lancer plus sérieusement. J’ai réalisé  et pensé ce site pour vous donner un premier aperçu de mes compétences de Dev Front-End, et vous donner envie d’en savoir plus. Pourquoi faire un CV classique, quand on peut s’amuser à faire un site !</p>
             </div>
             <div class="photo">
-            <img src="ressource/IMG_8255.jpg" alt="photo de Sophie">
+                <img src="ressource/received_635518176842028 (1).jpeg" alt="photo de Sophie">
             </div>
         </div>
     </section>
@@ -73,45 +80,120 @@
 
     <div class="line"></div>
 
-    <section class="content-section" id="projet">
-        <div class="container">
-            <div class="texte">
-                <h2>Comment pouvez vous m'aider ?</h2>
-                <p>
-                    Depuis que j’ai mis le nez dedans, l’idée d’en faire mon métier ne me quitte pas. Mon projet serais de pousser ma formation pour découvrir ce qui est attendu par les professionnels du milieu, connaitre les façon de travailler en équipe, et avoir un diplôme reconnu.
-                    Pour cela, j’ai besoin de vous : si vous recherchez un profil junior prêt à apprendre, prendre un apprenti, ou bien même une stagiaire, je suis cette personne ! </p>
+    <section class="content-section" id="realisation">
+        <h2>
+            Mes outils et languages favoris
+        </h2>
+         <div class="card-container">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-front" id="js">
+                        <img src="ressource/JavaScript.png" alt="logo JS">
+                        <!-- <i class="arrow-icon fa-light fa-arrow-right"></i> -->
+                    </div>
+                    <div class="card-back">
+                        <p>Pourtant pas des plus récents, ce langage se renouvelle en permanence. Longtemps mal aimé, je le trouve intéressant pour la liberté qu’il offre. Une fois que l’on à compris les bases, il est facile à utiliser. Je le maîtrise particulièrement pour rendre un site plus dynamique et attrayant pour l’utilisateur. Je suis également capable de l’utiliser pour la manipulation de données, utilisation d’API, etc… </p>
+                    </div>
+                </div>
             </div>
-            <div class="line-horizontale"></div>
-            <div class="texte">
-                <h2>Mes atouts</h2>
-                <p>Difficile de se faire remarquer quand on ne sort pas d’une grande école, je n’ai pas la prétention de dire que je sais tout faire. Je suis consciente qu’il me reste beaucoup de chose à apprendre, c’est justement ce que cherche. Mes expériences passées m’ont appris à travailler efficacement, à m’adapter toujours plus et surtout à répondre aux besoins des clients. Ma curiosité, ma patience et ma créativité ( que je développe en même temps que j’apprend à coder ) sont des points également important pour mon projet. </p>
+            <div class="card-wrapper"> 
+                <div class="card" id="css">
+                    <div class="card-front">
+                        <img src="ressource/CSS3_logo_and_wordmark.svg.png" alt="logo CSS">
+                        <!-- <i class="arrow-icon fa-solid fa-arrow-right"></i> -->
+                    </div>
+                    <div class="card-back">
+                        <p>Mon « petit » favori ! Les possibilités sont infinies en CSS pur, et c’est ce que j’aime avec ce langage. Beaucoup plus de liberté, et cela n’alourdis pas les pages avec des bibliothèques. Parfait pour un site vitrine comme le miens. Cela va évidement de paire avec le HTML, que je maitrise également. Ajouter un peu de JS, et je m’en donne à coeur joie. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card" id="bootstrap">
+                    <div class="card-front">
+                        <img src="ressource/Bootstrap_logo.svg" alt="logo bootstrap">
+                        <!-- <i class="arrow-icon fa-solid fa-arrow-right"></i> -->
+                    </div>
+                    <div class="card-back">
+                        <p>S’il y a un framework CSS à utiliser, c’est Bootstrap que je choisis. Simple à comprendre avec un documentation bien faite, c’est celui la que je retiens.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card" id="react">
+                    <div class="card-front">
+                        <img src="ressource/React.png" alt="logo react">
+                        <!-- <i class="arrow-icon fa-solid fa-arrow-right"></i> -->
+                    </div>
+                    <div class="card-back">
+                        <p>JS est très bien, mais un framework est nécessaire pour construire tout une app web dynamique. J’ai fais plusieurs app simple grâce à des micro-formation, et je maîtrise les principes : les composants, les hooks, le contexte, etc. La maîtrise de JS en amont aide beaucoup à comprendre les principes de React.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card" id="python">
+                    <div class="card-front">
+                        <img src="ressource/python.png" alt="logo python">
+                        <!-- <i class="arrow-icon fa-solid fa-arrow-right"></i> -->
+                    </div>
+                    <div class="card-back">
+                        <p>Je m’avance peut être à mettre Python dans mes compétences, mais c’est mon prochain grand projet : apprendre Python ! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card" id="bulma">
+                    <div class="card-front">
+                        <img src="ressource/bulma-logo (1).png" alt="logo bulma">
+                        <!-- <i class="arrow-icon fa-solid fa-arrow-right"></i> -->
+                    </div>
+                    <div class="card-back">
+                        <p>Même si Bootstrap est celui que je préfère, il est important de voir ce qui se fait, pour pouvoir s’adapter aux demandes. J’ai eu l’occasion de faire quelques petits projets grâce à Bulma.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card" id="sass">
+                    <div class="card-front">
+                        <img src="ressource/Sass.png" alt="logo SASS">
+                        <!-- <i class="arrow-icon fa-solid fa-arrow-right"></i> -->
+                    </div>
+                    <div class="card-back">
+                        <p>Coder une page d’un site vitrine en CSS, c’est bien, mais cela se complique à mesure que notre site grossi. L’usage d’un préprocesseur devient nécessaire. J’ai eu l’occasion de voir les bases de SASS, il ne me manque plus qu’a les mettre en oeuvre avec un projet concret !</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card" id="wp">
+                    <div class="card-front">
+                        <img src="ressource/logo-wp.png" alt="logo WP">
+                        <!-- <i class="arrow-icon fa-solid fa-arrow-right"></i> -->
+                    </div>
+                    <div class="card-back">
+                        <p> Si cela peut être vu comme de la « triche » , je pense qu’il est important de connaître ce qui est proposé aux clients en matière de création de site web. J’en suis qu’à la phase de découverte, je découvre doucement toutes les fonctionnalités qu’offre cet outil.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-  
-
-    <!-- <section id="realisation">
-        <div class="container">
-            <div class="texte">
-                <h2>Mes réalisations</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quidem?</p>
-            </div>
-            <div class="js">
-                <span class="gray"><img src="ressource/JavaScript.png" alt="logo JS"></span>
-            </div>
-            <div class="html">
-                <span class="gray"><img src="ressource/html-coding.png" alt="logo html"></span>
-            </div>
-            <div class="react">
-                <span class="gray"><img src="ressource/React.png" alt="logo react"></span> 
-            </div>
-            <div class="wordpress">
-                 <span class="gray"><img src="ressource/logo-WordPress.jpg" alt="logo WP"></span>
-            </div>
+        
+        <div class="line"></div>
+        
+        <section class="content-section" id="projet">
+            <div class="container">
+                <div class="texte">
+                    <h2>Comment pouvez vous m'aider ?</h2>
+                    <p>
+                        Depuis que j’ai mis le nez dedans, l’idée d’en faire mon métier ne me quitte pas. Mon projet serais de pousser ma formation pour découvrir ce qui est attendu par les professionnels du milieu, connaitre les façon de travailler en équipe, et avoir un diplôme reconnu.
+                        Pour cela, j’ai besoin de vous : si vous recherchez un profil junior prêt à apprendre, prendre un apprenti, ou bien même une stagiaire, je suis cette personne ! </p>
+                    </div>
+                    <div class="line-horizontale"></div>
+                    <div class="texte">
+                        <h2>Mes atouts</h2>
+                        <p>Difficile de se faire remarquer quand on ne sort pas d’une grande école, je n’ai pas la prétention de dire que je sais tout faire. Je suis consciente qu’il me reste beaucoup de chose à apprendre, c’est justement ce que cherche. Mes expériences passées m’ont appris à travailler efficacement, à m’adapter toujours plus et surtout à répondre aux besoins des clients. Ma curiosité, ma patience et ma créativité ( que je développe en même temps que j’apprend à coder ) sont des points également important pour mon projet. </p>
+                    </div>
         </div>
-    </section> -->
-
-    
+    </section>
+  
     
     <div id="parrallax"></div>
     <section class="content-section" id="contact">

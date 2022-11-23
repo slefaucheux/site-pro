@@ -4,6 +4,31 @@ const navLinks = [...document.querySelectorAll('nav a')]
 const menu = document.querySelector('.liste-nav')
 const btnMenu = document.querySelector('.btn-toggle-container')
 
+// effet accueil
+
+const overlay = document.querySelector('.overlay')
+const txt = "Merci de prendre le temps de me lire"
+const title = document.querySelector('h1')
+
+function typewriter(text, index) {
+    if(index < text.length){
+        setTimeout(()=>{
+            title.innerHTML += `<span>${text[index]}</span>`;
+            typewriter(text, index + 1)
+        },100)
+    }
+}
+setTimeout(()=> {
+    typewriter(txt, 0)
+}, 200)
+
+
+setTimeout(function accueilEffect() {
+    overlay.remove()
+}, 5000 )
+
+//document.documentElement.style.overflow = 'hidden'
+
 
 // effet scrollSpy
 
@@ -69,3 +94,7 @@ btnMenu.addEventListener('click', function(){
 menu.addEventListener('click', function(){
     menu.classList.toggle('active-menu')
 })
+
+
+
+
