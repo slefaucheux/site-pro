@@ -7,8 +7,15 @@ const btnMenu = document.querySelector('.btn-toggle-container')
 // effet accueil
 
 const overlay = document.querySelector('.overlay')
-const txt = "Merci de prendre le temps de me lire"
+const txt = "Merci de prendre le temps de me lire..."
 const title = document.querySelector('h1')
+const btn = document.querySelector('.btn')
+
+
+function accueilEffect() {
+    document.body.style.overflow = 'visible'
+    overlay.remove()
+}
 
 function typewriter(text, index) {
     if(index < text.length){
@@ -17,17 +24,18 @@ function typewriter(text, index) {
             typewriter(text, index + 1)
         },100)
     }
+    if(index >= 4){
+        btn.classList.add('active')
+    }
 }
+
 setTimeout(()=> {
     typewriter(txt, 0)
-}, 200)
+}, 400)
 
+overlay.addEventListener('click', accueilEffect);
 
-setTimeout(function accueilEffect() {
-    overlay.remove()
-}, 5000 )
-
-//document.documentElement.style.overflow = 'hidden'
+setTimeout(accueilEffect, 10000)
 
 
 // effet scrollSpy
